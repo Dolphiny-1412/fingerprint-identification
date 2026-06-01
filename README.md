@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Forensic Fingerprint Analysis System
 
 A comprehensive, AI-powered fingerprint analysis system built with modern web technologies and machine learning.
