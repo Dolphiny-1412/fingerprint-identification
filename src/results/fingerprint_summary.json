@@ -1,0 +1,69 @@
+{
+  "images_root": "Images\\fingerprints",
+  "total_images": 320,
+  "overall_counts": {
+    "Loop": 1,
+    "Whorl": 160,
+    "Arch": 159,
+    "Unknown": 0
+  },
+  "overall_distribution": {
+    "Loop": 0.003125,
+    "Whorl": 0.5,
+    "Arch": 0.496875,
+    "Unknown": 0.0
+  },
+  "per_db_counts": {
+    "DB1_B": {
+      "Loop": 0,
+      "Whorl": 43,
+      "Arch": 37,
+      "Unknown": 0
+    },
+    "DB2_B": {
+      "Loop": 1,
+      "Whorl": 45,
+      "Arch": 34,
+      "Unknown": 0
+    },
+    "DB3_B": {
+      "Loop": 0,
+      "Whorl": 33,
+      "Arch": 47,
+      "Unknown": 0
+    },
+    "DB4_B": {
+      "Loop": 0,
+      "Whorl": 39,
+      "Arch": 41,
+      "Unknown": 0
+    }
+  },
+  "per_db_distribution": {
+    "DB1_B": {
+      "Loop": 0.0,
+      "Whorl": 0.5375,
+      "Arch": 0.4625,
+      "Unknown": 0.0
+    },
+    "DB2_B": {
+      "Loop": 0.0125,
+      "Whorl": 0.5625,
+      "Arch": 0.425,
+      "Unknown": 0.0
+    },
+    "DB3_B": {
+      "Loop": 0.0,
+      "Whorl": 0.4125,
+      "Arch": 0.5875,
+      "Unknown": 0.0
+    },
+    "DB4_B": {
+      "Loop": 0.0,
+      "Whorl": 0.4875,
+      "Arch": 0.5125,
+      "Unknown": 0.0
+    }
+  },
+  "runtime_sec": 166.93
+}

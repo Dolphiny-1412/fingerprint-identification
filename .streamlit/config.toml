@@ -1,0 +1,41 @@
+[theme]
+# Base theme - dark mode for data-heavy interfaces
+base = "dark"
+
+# Color tokens following design system principles
+primaryColor = "#0EA5E9"  # Sky blue - primary brand color
+backgroundColor = "#0F172A"  # Dark slate for reduced eye strain
+secondaryBackgroundColor = "#1E293B"  # Slate 800 for cards/containers
+textColor = "#F8FAFC"  # High contrast white text for excellent readability
+
+# Typography system
+font = "Inter"  # Modern, readable font optimized for data
+
+[server]
+# Performance optimizations
+port = 8501
+address = "0.0.0.0"
+maxUploadSize = 200  # MB
+maxMessageSize = 200  # MB
+enableCORS = false
+enableXsrfProtection = true
+enableStaticServing = true
+fileWatcherType = "auto"
+
+[runner]
+# Fast reload for better DX
+fastReruns = true
+postScriptGC = true
+
+[client]
+# UI optimizations
+showErrorDetails = true
+toolbarMode = "minimal"  # Clean interface
+showSidebarNavigation = true
+
+[browser]
+# Browser settings
+gatherUsageStats = false  # Privacy-first
+serverAddress = "localhost"
+serverPort = 8501
+

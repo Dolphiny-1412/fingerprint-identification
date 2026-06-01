@@ -1,0 +1,47 @@
+# Fingerprint Analysis System Configuration
+# ========================================
+
+# Paths and Directories
+paths:
+  uploads: "data/uploads"
+  derived: "data/derived"
+  database: "data/fingerprints_db"
+  logs: "logs"
+  models: "models"
+  reports: "reports"
+
+# Quality and Matching Thresholds
+thresholds:
+  quality_min: 0.3
+  spoof_risk_max: 0.6
+  match_accept: 0.7
+  match_reject: 0.4
+  minutiae_min: 10
+  minutiae_max: 200
+
+# Processing Parameters
+processing:
+  image_size: [256, 256]
+  gabor_frequencies: [0.1, 0.15, 0.2]
+  gabor_angles: [0, 45, 90, 135]
+  block_size: 16
+  parallel_workers: 4
+
+# Security Settings
+security:
+  spoof_threshold: 0.6
+  texture_analysis: true
+  frequency_analysis: true
+  orientation_analysis: true
+
+# UI Settings
+ui:
+  max_file_size_mb: 10
+  supported_formats: ["png", "jpg", "jpeg", "bmp", "tiff"]
+  session_timeout_minutes: 30
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/system.log"
