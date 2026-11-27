@@ -1,35 +1,18 @@
-# Core Dependencies
+# Forensic Fingerprint Analysis System - runtime dependencies
+# (trimmed: removed tensorflow/torch/transformers/mahotas/plotly/imutils/imageio,
+#  nothing in the codebase imports them; this cuts deploy build time massively)
 streamlit>=1.28.0
 pillow>=10.0.0
 numpy>=1.24.0
-opencv-python>=4.8.0
+opencv-python-headless>=4.8.0
 scikit-learn>=1.3.0
 scikit-image>=0.21.0
-
-# AI and Machine Learning
-tensorflow>=2.13.0
-keras>=2.13.0
-torch>=2.0.0
-transformers>=4.30.0
-
-# Data Processing
+scipy>=1.10.0
 pandas>=2.0.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
-plotly>=5.15.0
-
-# Image Processing
-imageio>=2.31.0
-mahotas>=1.4.13
-imutils>=0.5.4
-
-# Utilities
+joblib>=1.3.0
 pyyaml>=6.0
 python-dotenv>=1.0.0
 requests>=2.31.0
 tqdm>=4.65.0
-
-# Development and Testing
-pytest>=7.4.0
-black>=23.7.0
-flake8>=6.0.0
