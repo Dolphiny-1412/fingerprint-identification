@@ -6,8 +6,8 @@ A comprehensive, AI-powered fingerprint analysis system built with modern web te
 
 1. **Clone the repo**
    ```bash
-   git clone <repo-url>
-   cd "Fingerprint Project"
+   git clone https://github.com/Dolphiny-1412/fingerprint-identification.git
+   cd fingerprint-identification
    ```
 
 2. **Install dependencies** (minimal, fast):
@@ -68,6 +68,9 @@ src/
 ├── config/         # Configuration files
 ├── tests/          # Test suite
 └── docs/           # Documentation
+docs/             # Research paper (IEEE format) and conference template
+assets/samples/   # Sample fingerprint images used by module self-tests
+archive/          # Original per-member development workspaces (code only)
 ```
 
 ## 🚀 Quick Start

@@ -34,3 +34,16 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# Datasets and bulk data (not kept in git - see README "Datasets")
+data/
+datasets/
+Images/
+training data/
+*.zip
+
+# Trained model binaries
+*.pkl
+
+# IDE workspaces
+.vs/

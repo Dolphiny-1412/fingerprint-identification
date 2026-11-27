@@ -609,8 +609,8 @@ def detect_minutiae(image_path: str) -> Dict:
 if __name__ == "__main__":
     # Test with sample images
     test_images = [
-        "Fingerprint D/archive/fingerprints/DB1_B/101_1.tif",
-        "Fingerprint D/archive/fingerprints/DB1_B/102_1.tif"
+        "assets/samples/101_1.tif",
+        "assets/samples/102_1.tif"
     ]
     
     for test_image in test_images:

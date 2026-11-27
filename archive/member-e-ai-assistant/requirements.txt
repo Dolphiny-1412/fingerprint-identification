@@ -1,0 +1,4 @@
+pytest>=7.0.0
+python-dotenv>=0.21.0
+# Optional for LLM mode:
+openai>=1.0.0
