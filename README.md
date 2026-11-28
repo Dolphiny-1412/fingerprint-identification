@@ -1,6 +1,23 @@
-# Forensic Fingerprint Analysis System
+# Fingerprint Pattern Analysis System
 
-A comprehensive, AI-powered fingerprint analysis system built with modern web technologies and machine learning.
+A Streamlit app that classifies a fingerprint image as **arch, loop or whorl** using OpenCV image processing and a scikit-learn classifier. It also contains experimental minutiae-detection, matching and AI-assistant modules.
+
+**Live demo (free Streamlit hosting, may need a click to wake up):** https://fingerprint-identification.streamlit.app/
+
+![The live app: upload step with the progress tracker](docs/screenshot-live-app.png)
+
+*Real screenshot of the live app.*
+
+## About this project
+
+This started as a university team project (the "M.A.H.E" group). The team did not contribute code, so I built and maintain it on my own. The `archive/` folder keeps earlier per-module workspaces from that period.
+
+## What it does and does not do
+
+- **Works and is demoed:** upload a fingerprint image, classify it as arch, loop or whorl, step through the 4-step workflow (Upload, Classify, Minutiae, Match).
+- **Experimental, not evaluated here:** minutiae detection, database matching, spoof/liveness checks and the optional OpenAI-based explanations. No accuracy numbers are claimed for them.
+- **No published accuracy figure for the classifier yet.** Only a measured number on a held-out set would be honest here, and it has not been run. Treat it as a demo.
+- Educational/research software, not production biometrics.
 
 ## Setup
 
@@ -38,17 +55,6 @@ A comprehensive, AI-powered fingerprint analysis system built with modern web te
    # Or on Windows: double-click run_app.bat
    ```
 
-## Team — M.A.H.E
-| Member | Module |
-|--------|--------|
-| A | UI & Integration (`src/ui/`) |
-| B | Pattern Classifier (`src/core/classifier.py`) |
-| C | Minutiae Detection (`src/core/minutiae_detector.py`) |
-| D | Matching & Database (`src/core/fingerprint_matcher.py`) |
-| E | AI Assistant (`src/core/ai_assistant.py`) |
-
-> ⚠️ This is educational/research software — not production-grade biometrics.
-
 ## 🏗️ Project Structure
 
 ```
@@ -73,88 +79,17 @@ assets/samples/   # Sample fingerprint images used by module self-tests
 archive/          # Original per-member development workspaces (code only)
 ```
 
-## 🚀 Quick Start
+## Tests
 
-1. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Run the application:**
-   ```bash
-   python main.py
-   ```
-
-3. **Or use Streamlit directly:**
-   ```bash
-   streamlit run src/ui/app_modern.py
-   ```
-
-## ✨ Features
-
-- **4-Step Analysis Workflow**: Upload → Classify → Minutiae → Match
-- **AI-Powered Classification**: Advanced pattern recognition
-- **Minutiae Detection**: Precise ridge ending and bifurcation detection
-- **Identity Matching**: Secure database matching with spoof detection
-- **Responsive Design**: Works on all screen sizes
-- **Modern UI**: Professional forensic analysis interface
-
-## 🎯 Core Capabilities
-
-- **Fingerprint Classification**: Arch, Loop, Whorl, and composite patterns
-- **Minutiae Extraction**: Automated feature point detection
-- **Spoof Detection**: AI-powered liveness detection
-- **Database Management**: Secure fingerprint storage and retrieval
-- **Report Generation**: Comprehensive analysis reports
-
-## 🔧 Configuration
-
-Edit `src/config/config.yaml` to customize:
-- Database settings
-- Model parameters
-- UI preferences
-- Security thresholds
-
-## 📱 Responsive Design
-
-The application automatically adapts to:
-- Desktop screens (1920x1080+)
-- Tablet devices (768x1024)
-- Mobile phones (375x667)
-- All modern web browsers
-
-## 🧪 Testing
-
-Run the test suite:
 ```bash
 python -m pytest src/tests/
 ```
 
-## 📚 Documentation
+## Documentation
 
-- `src/docs/` - Technical documentation
-- `src/docs/HOW_TO_RUN.md` - Detailed setup guide
-- `src/docs/PROJECT_COMPLETION_SUMMARY.md` - Project overview
+- `src/docs/README.md` and `src/docs/SYSTEM_COMPLETION_SUMMARY.md`: development notes
+- `docs/`: the course research paper (IEEE format) and the conference template
 
-## 🤝 Contributing
+## License
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🆘 Support
-
-For issues and questions:
-1. Check the documentation in `src/docs/`
-2. Review existing issues
-3. Create a new issue with detailed information
-
----
-
-**Built with ❤️ using Streamlit, Python, and modern AI technologies**
+MIT, see `LICENSE`.
