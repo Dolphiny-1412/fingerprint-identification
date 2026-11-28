@@ -10,7 +10,7 @@ A Streamlit app that classifies a fingerprint image as **arch, loop or whorl** u
 
 ## About this project
 
-This started as a university team project (the "M.A.H.E" group). The team did not contribute code, so I built and maintain it on my own. The `archive/` folder keeps earlier per-module workspaces from that period.
+This started as a university team project (the "M.A.H.E" group). The team did not contribute code, so I built and maintain it on my own. The `archive/` folder keeps my earlier per-module workspaces from that period (see `archive/README.md`).
 
 ## What it does and does not do
 
@@ -76,7 +76,7 @@ src/
 └── docs/           # Documentation
 docs/             # Research paper (IEEE format) and conference template
 assets/samples/   # Sample fingerprint images used by module self-tests
-archive/          # Original per-member development workspaces (code only)
+archive/          # Earlier development workspaces, collapsed into one folder (see archive/README.md)
 ```
 
 ## Tests
